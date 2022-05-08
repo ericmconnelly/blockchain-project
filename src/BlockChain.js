@@ -5,8 +5,8 @@ import { Buffer} from "buffer";
 import { Balance } from "./Balance";
 
 export const BlockChain = () => {
-  const [publicAddress, setPublicAddress] = useState("0x273f77885e66219e92b2ef75377f4592fefb4c61");
-  const [privateKey, setPrivateKey] = useState("e45ce9e54c646974a15862eca0c79d73f9307d734fcbb8e650457d1845592e63");
+  const [publicAddress, setPublicAddress] = useState("");
+  const [privateKey, setPrivateKey] = useState("");
 
   const handlePAChange = (e) => {
     setPublicAddress(() => e.target.value);
